@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<title>Innovators Compound</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="description" content="E-zine">
+		<meta name="author" content="Michael Jihoon Sun">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Collaborative network that guides creative processes in art and technology." />
+		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		
+		<!--<link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen" />-->
+		 <link rel="stylesheet" href="stylesheets/grid.css">
+		 <link rel="stylesheet" href="font.css">
+                 <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css" media="screen">
+                 <link rel="stylesheet" type="text/css" href="js/source/helpers/jquery.fancybox-thumbs.css?v=2.0.4">
+
+
+		
+		<!-- Include external Javascript -->
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+                <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+                <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
+                <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+                <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : { 
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+        <style type="text/css">
+		.fancybox-custom .fancybox-outer {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+	
+</head>
+
+
+<body>
+		
+		<div class="container_5">
+				
+				<!--<div class="border"></div>
+				<div class="grid_5">
+				<div id="home">
+						<a href="index.html">HOME</a>
+				</div>
+				<div id="about">
+						<a href="about.html">ABOUT</a>
+				</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>-->
+				
+				
+				<div class="grid_logo">
+						<!--<a href="index.html"><img src="images/logo5.png" alt="Aggregate resource for Processing and Arduino" /></a>-->
+						<a href="index.html"><h1>Innovation Compound</h1></a>
+						
+				</div>
+				
+				<div class="grid_header_description">
+						<p>The intersection of <em>art</em> & <em>technology</em>.<br/>The blur between the <em>digital</em> & <em>real</em>.<br/>Here's a complete guide for using <b>Processing</b> & <b>Arduino</b>.</p>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>
+		
+				<div id="bottomnav">
+						<ul><li><a href="tutorials.html"><span>Tutorials</span></a></li><li><a href="exhibition.html"><span>Exhibition</span></a></li><li><a href="partlocator.html"><span>Hardware</span></a></li><li><a href="stores.html"><span>Stores</span></a></li><li style="margin-right:0;"><a href="community.html"><span>Community</span></a></li></ul>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="border"></div>
+				
+				<div id="breadcrumb">
+                                    <p><a href="index.html">Home</a> &raquo; <a href="community.html">Community</a> &raquo; <a href="processingarduinocommunity.html">Processing + Arduino</a</p>
+                                </div>
+                                
+                                <div class="clear"></div>
+                                
+				<div class="content">
+						<div class="grid_5">
+								<h2>Community</h2>
+                                                                <h5 class="subhead">Share and learn from fellow innovators. Now viewing: <em style="font-size:20px; color:red;">PROCESSING + ARDUINO</em></h5>              
+						</div>
+                                                
+
+                                                
+                                                <div class="clear"></div>
+                                                
+                                                <div class="contentborder"></div>
+                                                    
+				</div>
+                                
+                                <div class="section">
+                                    
+                                    <div class="grid_1">
+                                        <ul id="secondarynav">
+                                            <li>
+                                                <a href="community.html" >All Communities</a>
+                                            </li>
+                                            <li>
+                                                <a href="processingcommunity.html">Processing</a>
+                                            </li>
+                                            <li>
+                                                <a href="arduinocommunity.html">Arduino</a>
+                                            </li>
+                                            <li>
+                                                <a href="processingarduinocommunity.html" id="current">Processing + Arduino</a>
+                                            </li>
+					    <p><small>Here's a list of websites to guide you through your Processing + Arduino hybrid projects. </small></p>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="grid_4">
+					
+                                        
+                                    <div class="exhibitionsection">                          
+                                            <a href="http://www.creativeapplications.net"><h4>CreativeApplications.net<small></small></h4></a>                       
+                                            <a class="fancybox-thumbs" data-fancybox-group="creativeapplications"  href="images/creativeapplications.png"><img class="thumbnail" src="images/creativeapplicationspreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="creativeapplications"  href="images/creativeapplications2.png"><img class="thumbnail" src="images/creativeapplicationspreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="creativeapplications"  href="images/creativeapplications3.png"><img class="thumbnail" src="images/creativeapplicationspreview3.png"></a>
+                                            <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://www.creativeapplications.net">Processing & Arduino</a><br/><b>Supports</b>: Project sharing, discussion, app building, education<br/><b>View page:</b><a href="http://www.creativeapplications.net"> CreativeApplications.net</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                <p><b>Description</b>: CreativeApplications reports innovation and catalogues projects, tools and platforms relevant to the intersection of art, media and technology. This is one of my personal favorites!</p>
+                                            </div>
+                                        </div>
+						
+                                        
+					<div class="clear"></div>
+				<div class="descriptionborder"></div>
+				
+				 <div class="exhibitionsection">                          
+                                            <a href="http://www.arduino.cc/playground/Interfacing/Processing"><h4>Arduino Playground<small></small></h4></a>                       
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduinoplayground"  href="images/arduinoplayground.png"><img class="thumbnail" src="images/arduinoplaygroundpreview1.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduinoplayground"  href="images/arduinoplayground2.png"><img class="thumbnail" src="images/arduinoplaygroundpreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduinoplayground"  href="images/arduinoplayground3.png"><img class="thumbnail" src="images/arduinoplaygroundpreview3.png"></a>
+                                            <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://www.arduino.cc/playground/Interfacing/Processing">Processing & Arduino</a><br/><b>Supports</b>: Project sharing, discussion, manuals, stores<br/><b>View page:</b><a href="http://www.arduino.cc/playground/Interfacing/Processing"> Arduino.cc/Processing</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                <p><b>Description</b>: If you just want to control an Arduino board from a Processing program, you may want to use the Arduino library for Processing described at the Arduino Playground.</p>
+                                            </div>
+                                        </div>
+						
+                                      
+				
+                            
+                                    </div>
+                                
+                     
+                                 <div class="clear"></div>
+                                
+                                <div class="dottedborder" style="padding-top:9px;"></div>
+                           
+                                
+                                <div class="footer">
+                                    
+                                    <div class="border"></div>
+                                        <p>This website was created by Michael Jihoon Sun</p><span id="wireframes"><p>Wireframes <a href="images/wireframe1.png" target="_blank">1</a> | <a href="images/wireframe2.png" target="_blank">2</a> | <a href="images/wireframe1.png" target="_blank">3</a> </p></span>
+                                        
+                                    <div class="clear"></div>
+                                    <div class="dottedborder"></div>
+                               
+                                </div>
+
+				
+		</div>
+
+</body>
+</html>

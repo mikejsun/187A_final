@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<title>Innovators Compound</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="description" content="E-zine">
+		<meta name="author" content="Michael Jihoon Sun">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Collaborative network that guides creative processes in art and technology." />
+		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		
+		<!--<link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen" />-->
+		 <link rel="stylesheet" href="stylesheets/grid.css">
+		 <link rel="stylesheet" href="font.css">
+                 <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css" media="screen">
+                 <link rel="stylesheet" type="text/css" href="js/source/helpers/jquery.fancybox-thumbs.css?v=2.0.4">
+
+
+		
+		<!-- Include external Javascript -->
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+                <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+                <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
+                <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+                <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : { 
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+        <style type="text/css">
+		.fancybox-custom .fancybox-outer {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+	
+</head>
+
+
+<body>
+		
+		<div class="container_5">
+				
+				<!--<div class="border"></div>
+				<div class="grid_5">
+				<div id="home">
+						<a href="index.html">HOME</a>
+				</div>
+				<div id="about">
+						<a href="about.html">ABOUT</a>
+				</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>-->
+				
+				<div class="grid_logo">
+						<!--<a href="index.html"><img src="images/logo5.png" alt="Aggregate resource for Processing and Arduino" /></a>-->
+						<a href="index.html"><h1>Innovation Compound</h1></a>
+						
+				</div>
+				
+				<div class="grid_header_description">
+						<p>The intersection of <em>art</em> & <em>technology</em>.<br/>The blur between the <em>digital</em> & <em>real</em>.<br/>Here's a complete guide for using <b>Processing</b> & <b>Arduino</b>.</p>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>
+		
+				<div id="bottomnav">
+						<ul><li><a href="tutorials.html"><span>Tutorials</span></a></li><li><a href="exhibition.html"><span>Exhibition</span></a></li><li><a href="partlocator.html"><span>Hardware</span></a></li><li><a href="stores.html"><span>Stores</span></a></li><li style="margin-right:0;"><a href="community.html"><span>Community</span></a></li></ul>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="border"></div>
+				
+				<div id="breadcrumb">
+                                    <p><a href="index.html">Home</a> &raquo; <a href="partlocator.html">Hardware</a> &raquo; <a href="sensors.html">Sensors</a></p>
+                                </div>
+                                
+                                <div class="clear"></div>
+                                
+				<div class="content">
+						<div class="grid_5">
+								<h2>Hardware</h2>
+                                                                <h5 class="subhead">A list of the most commonly used parts for Arduino. Currently viewing: <em style="font-size:20px; color:red;"> Sensors</em></h5>              
+						</div>
+                                                
+
+                                                
+                                                <div class="clear"></div>
+                                                
+                                                <div class="contentborder"></div>
+                                                    
+				</div>
+				
+				<div class="section">
+                                    
+                                    <div class="grid_1">
+                                        <ul id="secondarynav">
+                                            <li>
+                                                <a href="partlocator.html">All Hardware</a>
+                                            </li>
+					    <li>
+                                                <a href="starterkits.html">Starter Kits</a>
+					    </li>
+					    <li>
+                                                <a href="sensors.html" id="current">Sensors</a>
+                                            </li>
+                                            <li>
+                                                <a href="prototyping.html">Prototyping</a>
+					    </li>
+					     <p><small><em>Sensors</em> allow your Processing and/or Arduino projects to interact with the environment. They range in input type, size, and price.</small></p>
+                                        </ul>
+                                    </div>
+                                    
+                                    
+				    
+				<div class="grid_4">
+                                   
+                                
+                                  
+                                
+                                     
+                                     
+                                   
+                                   <div class="sensorsection">
+                                    <div class="grid_part">
+                                       <a href="http://www.adafruit.com/products/166" target="_blank"><h4>Pressure Sensor</h4></a>
+                                                <a href="http://www.adafruit.com/products/166" target="_blank"><img src="images/pressuresensorpreview.png"></a>
+                                         
+                                            
+                                               
+                                                <p>FSRs are sensors that allow you to detect physical pressure, squeezing and weight. They are simple to use and low cost.</p>
+                                            
+                                        </div>
+                                    <div class="grid_part">
+                                        
+                                        <a href="http://www.adafruit.com/products/189" target="_blank"><h4>PIR Motion Sensor</h4></a>
+                                                <a href="http://www.adafruit.com/products/189" target="_blank"><img src="images/pirsensorpreview.png"></a>
+                                          
+                                                
+                                                <p>PIR sensors are used to detect motion from pets/humanoids from about 20 feet away.</p>
+                                            
+                                        </div>
+                                    <div class="grid_part">
+                                        
+                                        <a href="http://www.adafruit.com/products/374"target="_blank"><h4>Temperature Sensor</h4></a>
+                                                <a href="http://www.adafruit.com/products/374" target="_blank"><img src="images/tempsensorpreview.png"></a>
+                                          
+                                            
+                                              
+                                                <p>These 1-wire digital temperature sensors are fairly precise (0.5C over much of the range) and connects directly to your Arduino!</p>
+                                            
+                                        </div>
+                                   
+                                    <div class="grid_part">
+                                           
+                                             <a href="http://www.amazon.com/s/ref=bl_sr_pc?_encoding=UTF8&node=172282&field-brandtextbin=Arduino" target="_blank"><h4>LED Pushbutton</h4></a>
+                                                <a href="http://www.amazon.com/s/ref=bl_sr_pc?_encoding=UTF8&node=172282&field-brandtextbin=Arduino" target="_blank"><img src="images/buttonsensorpreview.png"></a>
+                                     
+                                            
+                                              
+                                                <p>It's not as simple as a button or a switch. It's like the ones you see in arcades, except it has an LED you can control separately.</p>
+                                            
+                                        </div>
+                                  
+                                    
+                                    </div>
+                                   
+                                </div>
+                                
+                                
+                       <div class="clear"></div>
+                                
+                                <div class="dottedborder" style="padding-top:9px;"></div>
+                           
+                                
+                                <div class="footer">
+                                    
+                                    <div class="border"></div>
+                                        <p>This website was created by Michael Jihoon Sun</p><span id="wireframes"><p>Wireframes <a href="images/wireframe1.png" target="_blank">1</a> | <a href="images/wireframe2.png" target="_blank">2</a> | <a href="images/wireframe1.png" target="_blank">3</a> </p></span>
+                                        
+                                    <div class="clear"></div>
+                                    <div class="dottedborder"></div>
+                               
+                                </div>
+                               
+
+				
+		</div>
+
+</body>
+</html>

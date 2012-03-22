@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+		<title>Innovators Compound</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="description" content="E-zine">
+		<meta name="author" content="Michael Jihoon Sun">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Collaborative network that guides creative processes in art and technology." />
+		
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		
+		<!--<link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen" />-->
+		 <link rel="stylesheet" href="stylesheets/grid.css">
+		 <link rel="stylesheet" href="font.css">
+                 <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css" media="screen">
+                 <link rel="stylesheet" type="text/css" href="js/source/helpers/jquery.fancybox-thumbs.css?v=2.0.4">
+
+
+		
+		<!-- Include external Javascript -->
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+                <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+                <script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
+                <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=2.0.4"></script>
+                <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				Simple image gallery. Uses default settings
+			*/
+
+			$('.fancybox').fancybox();
+
+			/*
+				Different effects
+			*/
+
+			// Change title type, overlay opening speed and opacity
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedIn : 500,
+						opacity : 0.95
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background-color' : '#eee'	
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+				Button helper. Disable animations, hide close button, change title type and content
+			*/
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+				Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			*/
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : { 
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+
+			/*
+				Open manually
+			*/
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50	
+						}
+					}	
+				});
+			});
+
+
+		});
+	</script>
+        <style type="text/css">
+		.fancybox-custom .fancybox-outer {
+			box-shadow: 0 0 50px #222;
+		}
+	</style>
+</head>
+
+
+<body>
+		
+		<div class="container_5">
+				
+				<!--<div class="border"></div>
+				<div class="grid_5">
+				<div id="home">
+						<a href="index.html">HOME</a>
+				</div>
+				<div id="about">
+						<a href="about.html">ABOUT</a>
+				</div>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>-->
+				
+				
+				<div class="grid_logo">
+						<!--<a href="index.html"><img src="images/logo5.png" alt="Aggregate resource for Processing and Arduino" /></a>-->
+						<a href="index.html"><h1>Innovation Compound</h1></a>
+						
+				</div>
+				
+				<div class="grid_header_description">
+						<p>The intersection of <em>art</em> & <em>technology</em>.<br/>The blur between the <em>digital</em> & <em>real</em>.<br/>Here's a complete guide for using <b>Processing</b> & <b>Arduino</b>.</p>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="dottedborder"></div>
+		
+				<div id="bottomnav">
+						<ul><li><a href="tutorials.html"><span>Tutorials</span></a></li><li><a href="exhibition.html"><span>Exhibition</span></a></li><li><a href="partlocator.html"><span>Hardware</span></a></li><li><a href="stores.html"><span>Stores</span></a></li><li style="margin-right:0;"><a href="community.html"><span>Community</span></a></li></ul>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="border"></div>
+				
+				<div id="breadcrumb">
+                                    <p><a href="index.html">Home</a> &raquo; <a href="tutorials.html">Tutorials</a> &raquo; <a href="tutorialsarduino.html">Arduino</a></p>
+                                </div>
+                                
+                                <div class="clear"></div>
+                                
+				<div class="content">
+						
+						<div class="grid_5">
+								<h2>Tutorials</h2>
+                                                                <h5 class="subhead">Here's a list of resources to help you get started. Now learning: <em style="font-size:20px; color:red;"> ARDUINO</em></h5>
+						</div>
+					
+				</div>
+                                
+                                 <div class="clear"></div>
+                                <div class="contentborder"></div>
+                                
+                                <div class="section">
+                                    <div class="grid_1">
+                                        <ul id="secondarynav">
+                                            <li>
+                                                <a href="tutorials.html">All Tutorials</a>
+                                            </li>
+                                            <li>
+                                                <a href="tutorialsprocessing.html">Processing</a>
+                                            </li>
+                                            <li>
+                                                <a href="tutorialsarduino.html" id="current">Arduino</a>
+                                            </li>
+					    <p><small>Here's a list of websites that will help you get started with <em>Arduino.</em> Please note the level of difficulty for each and plan accordingly.</small> </p>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="grid_4">
+						
+						
+						
+						<div class="exhibitionsection">                          
+                                            <a href="http://arduino.cc/en/Tutorial/HomePage" target="_blank"><h4>Arduino.cc<small></small></h4></a>                       
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduino"  href="images/arduino.png"><img class="thumbnail" src="images/arduinopreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduino"  href="images/arduino2.png"><img class="thumbnail" src="images/arduinopreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="arduino"  href="images/arduino3.png"><img class="thumbnail" src="images/arduinopreview3.png"></a>
+                                            <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://arduino.cc/en/Tutorial/HomePage">Arduino</a><br/><b>Difficulty</b>: Beginner<br/><b>Source:</b><a href="http://arduino.cc/en/Tutorial/HomePage" target="_blank"> Arduino.cc</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                <p><b>Description</b>: Arduino is an open-source electronics prototyping platform based on flexible, easy-to-use hardware and software. It's intended for artists, designers, hobbyists, and anyone interested in creating interactive objects or environments. Arduino can sense the environment by receiving input from a variety of sensors and can affect its surroundings by controlling lights, motors, and other actuators.</p>
+                                            </div>
+                                        </div>
+                                        
+					<div class="clear"></div>
+				<div class="descriptionborder"></div>
+				
+				<div class="exhibitionsection">
+						 <a href="http://webzone.k3.mah.se/projects/arduino-workshop/projects/arduino_meets_processing/instructions/index.html" target="_blank"><h4>Arduino meets Processing<small></small></h4></a>
+                                           <a class="fancybox-thumbs" data-fancybox-group="ArduinomeetsProcessing"  href="images/ArduinomeetsProcessing.png"><img class="thumbnail" src="images/ArduinomeetsProcessingpreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="ArduinomeetsProcessing"  href="images/ArduinomeetsProcessing2.png"><img class="thumbnail" src="images/ArduinomeetsProcessingpreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="ArduinomeetsProcessing"  href="images/ArduinomeetsProcessing3.png"><img class="thumbnail" src="images/ArduinomeetsProcessingpreview3.png"></a>
+
+                                       <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://webzone.k3.mah.se/projects/arduino-workshop/projects/arduino_meets_processing/instructions/index.html" target="_blank">Arduino & Processing</a><br/><b>Difficulty</b>: Intermediate<br/><b>View page:</b><a href="http://webzone.k3.mah.se/projects/arduino-workshop/projects/arduino_meets_processing/instructions/index.html" target="_blank"> ArduinomeetsProcessing</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                
+                                                <p><b>Description:</b>: The Arduino meets Processing project intends to make it as easy as possible for anyone to explore the world of physical computing. All you need is an Arduino board as well as the Arduino and Processing software, which you can download on their project websites.</p>
+                                            </div>
+                                        </div>
+				
+				<div class="clear"></div>
+				<div class="descriptionborder"></div>
+				
+				<div class="exhibitionsection">
+						 <a href="http://www.ladyada.net/learn/arduino/"><h4>Ladyada.net<small></small></h4></a>
+                                           <a class="fancybox-thumbs" data-fancybox-group="ladyada"  href="images/ladyada.png"><img class="thumbnail" src="images/ladyadapreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="ladyada"  href="images/ladyada2.png"><img class="thumbnail" src="images/ladyadapreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="ladyada"  href="images/ladyada3.png"><img class="thumbnail" src="images/ladyadapreview3.png"></a>
+
+                                       <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://www.ladyada.net/learn/arduino/">Arduino </a><br/><b>Difficulty</b>: Intermediate<br/><b>View page:</b><a href="http://www.ladyada.net/learn/arduino/"> Ladyada.net</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                
+                                                <p><b>Description:</b>: Ladyada hosts a short tutorial course that is excellent for jumping into Arduino and electronics for the first time.</p>
+                                            </div>
+                                        </div>
+				
+					<div class="clear"></div>
+				<div class="descriptionborder"></div>
+				
+				<div class="exhibitionsection">
+						 <a href="http://www.freeduino.org" target="_blank"><h4>Freeduino.org<small></small></h4></a>
+                                           <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/Freeduino.png"><img class="thumbnail" src="images/Freeduinopreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/Freeduino2.png"><img class="thumbnail" src="images/Freeduinopreview2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/Freeduino3.png"><img class="thumbnail" src="images/Freeduinopreview3.png"></a>
+
+                                       <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://www.freeduino.org/" target="_blank">Arduino </a><br/><b>Difficulty</b>: Intermediate<br/><b>View page:</b><a href="http://www.freeduino.org/" target="_blank"> Freeduino.org</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                
+                                                <p><b>Description:</b>: Freeduino.org offers a HUGE list of tutorials, example projects, and articles with general info and best practices.  Tough to get through them all, but it's in alphabetical order and worth a check if you're having trouble finding info elsewhere.</p>
+                                            </div>
+                                        </div>
+				
+				<div class="clear"></div>
+				<div class="descriptionborder"></div>
+				
+				<div class="exhibitionsection">
+						 <a href="http://tronixstuff.wordpress.com/" target="_blank"><h4>Tronixstuff.wordpress.com<small></small></h4></a>
+                                           <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/tronixstuff.png"><img class="thumbnail" src="images/tronixstuffpreview.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/tronixstuffpreview2.png"><img class="thumbnail" src="images/tronixstuff2.png"></a>
+                                            <a class="fancybox-thumbs" data-fancybox-group="Freeduino"  href="images/tronixstuff3.png"><img class="thumbnail" src="images/tronixstuffpreview3.png"></a>
+
+                                       <div class="exhibitionindex">
+                                                <p><b>Platform</b>: <a href="http://tronixstuff.wordpress.com/">Arduino </a><br/><b>Difficulty</b>: Advanced<br/><b>View page:</b><a href="http://tronixstuff.wordpress.com/" target="_blank"> Tronixstuff.wordpress.com</a></p>
+                                             
+                                                
+                                            </div>
+                                            <div class="exhibitiondescription">
+                                                
+                                                <p><b>Description:</b>: Tronixstuff has a long series of Arduino tutorials that begin with the basics and move all the way through advanced sensing and communications.  The material there is enough to be a thorough book all on its own.</p>
+                                            </div>
+                                        </div>
+                                        
+                                      <!--  <div class="infosection">
+                                            <div class="image">
+                                                <a href="http://www.arduino.cc"><img src="images/arduino.png"></a>
+                                            </div>
+                                            <div class="description">
+                                                <a href="http://www.processing.org"><h4>Arduino</h4></a>
+                                                <p>Arduino is an open-source electronics prototyping platform based on flexible, easy-to-use hardware and software. It's intended for artists, designers, hobbyists, and anyone interested in creating interactive objects or environments.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="clear"></div>
+                                        <div class="descriptionborder"></div>
+                                        
+                                        <div class="infosection">
+                                            <div class="image">
+                                                <a href="http://www.ladyada.net/learn/arduino/"><img src="images/ladyada.png"></a>
+                                            </div>
+                                            <div class="description">
+                                                <a href="http://wiki.processing.org/w/Main_Page"><h4>Ladyada</h4></a>
+                                                <p>Ladyada hosts a short tutorial course that is excellent for jumping into Arduino and electronics for the first time.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="clear"></div>
+                                        <div class="descriptionborder"></div>
+                                        
+                                        <div class="infosection">
+                                            <div class="image">
+                                                <a href="http://www.freeduino.org/"><img src="images/freeduino.png"></a>
+                                            </div>
+                                            <div class="description">
+                                                <a href="http://www.freeduino.org/"><h4>Freeduino</h4></a>
+                                                <p>On the Freeduino page, you'll find a HUGE list of tutorials, example projects, and articles with general info and best practices.  Tough to get through them all, but it's in alphabetical order and worth a check if you're having trouble finding info elsewhere.</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="clear"></div>
+                                        <div class="descriptionborder"></div>
+                                        
+                                        <div class="infosection">
+                                            <div class="image">
+                                                <a href="http://tronixstuff.wordpress.com/"><img src="images/tronixstuff.png"></a>
+                                            </div>
+                                            <div class="description">
+                                                <a href="http://tronixstuff.wordpress.com/"><h4>Tronixstuff</h4></a>
+                                                <p>tronixstuff has a long series of Arduino tutorials that begin with the basics and move all the way through advanced sensing and communications.  The material there is enough to be a thorough book all on its own.</p>
+                                            </div>
+                                        </div>-->
+      
+                                    </div>
+                                </div>
+                                
+                                 <div class="clear"></div>
+                                
+                                <div class="dottedborder" style="padding-top:9px;"></div>
+                           
+                                
+                                <div class="footer">
+                                    
+                                    <div class="border"></div>
+                                        <p>This website was created by Michael Jihoon Sun</p><span id="wireframes"><p>Wireframes <a href="images/wireframe1.png" target="_blank">1</a> | <a href="images/wireframe2.png" target="_blank">2</a> | <a href="images/wireframe1.png" target="_blank">3</a> </p></span>
+                                        
+                                    <div class="clear"></div>
+                                    <div class="dottedborder"></div>
+                               
+                                </div>
+                               
+
+				
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,1699 @@
+
+
+/* CSS Document */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 12px;
+}
+
+
+
+h1 {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #111111;
+	font-size: 118px;
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;
+	letter-spacing: -8px;
+	padding-right: 10px;
+	}
+
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #111111;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px;
+
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration:none;
+	color: #999999;
+	font-size: 16px;
+	font-weight: bold;
+	margin: -5px 0px 0px 1px;
+}
+
+h3 a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration:none;
+	color: #999999;
+	font-size: 16px;
+	font-weight: bold;
+	margin: -5px 0px 0px 1px;
+	background-image: url(./more_h2.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 13px;
+	
+}
+h3 a:hover{
+	color: #777777;
+	cursor: help;
+}
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+}
+h4 a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	text-decoration:none;
+	background-image: url(./more_h3.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 10px;
+}
+
+
+h5 {
+		font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #999999;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	text-decoration:none;
+  
+	padding-right: 10px;
+}
+
+
+a {
+	color: #333333;
+}
+
+/* MAIN CONTAINER */
+
+#main {
+	width: 960px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#head {
+	width: 960px;
+	height: 34px;
+	background-image: url(./gifs/head01_line.gif);
+	background-repeat: repeat-x;
+}
+
+#head02 {
+    float:left;
+	width: 960px;
+	height: 270px;
+	top: 0px;
+	background-image: url(./gifs/head02_line.gif);
+	background-repeat: repeat-x;
+}
+
+#head02_page {
+    float:left;
+	width: 100%;
+	height: 270px;
+	top: 0px;
+	background-image: url(./gifs/head02_line.gif);
+	background-repeat: repeat-x;
+}
+
+#head02_page_issues {
+    float:left;
+	width: 960px;
+	height: 240px;
+	top: 0px;
+	background-image: url(./gifs/head02_line.gif);
+	background-repeat: repeat-x;
+}
+
+
+/* NAVIGATION */
+
+
+#usernavbox{
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 8px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 960px;
+	height:34px;
+	
+}
+
+#usernav{
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;	
+    height:34px;
+	
+}
+#usernav li{
+	list-style-type: none;
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 8px;
+	margin-right: 2px;
+}
+
+#usernav ul {
+	list-style-type: none;
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+#usernav  a {
+	color:#111111;
+	text-decoration: none;
+}
+#usernav  a:hover {
+	color:#111111;
+	text-decoration: none;
+	color: #999999;
+}
+#mainlogin {
+	float: right;
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 6px;
+	margin-left: 0px;
+	margin-right: 2px;
+	text-align: right;
+	width: 550px;
+}
+
+/*Top navigation*/
+#topnav {
+	
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 8px;
+	margin-left: 0px;
+}
+
+#topnav li {
+	list-style-type: none;
+	position: relative;
+	float:left;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 12px;
+
+}
+
+#topnav ul {
+	list-style-type: none;
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+#topnav a {
+	color:#111111;
+	text-decoration: none;
+}
+#topnav a:hover {
+	color:#111111;
+	text-decoration: none;
+	color: #999999;
+}
+
+#bottomnav {
+	
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+#bottomnav li {
+	list-style-type: none;
+	position: relative;
+	float:left;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 25px;
+        margin-left:25px;
+}
+
+#bottomnav ul {
+	list-style-type: none;
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+#bottomnav a {
+	color:#111111;
+	text-decoration: none;
+}
+#bottomnav a:hover {
+	color:#111111;
+	text-decoration: none;
+	color: #999999;
+}
+
+
+
+/*End top navigation*/
+
+#sponsors {
+	height: 33px;
+	overflow: hidden;
+	float: right;
+	margin-right: 4px;
+}
+#topinfo {
+	position: relative;
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 60px;
+	top: 37px;
+}
+#topinfo02 {
+	position: relative;
+	float: left;
+	width: 950px;
+	clear: both;
+	top: 31px;
+	margin-left: 0px;
+}
+
+#topinfo_page {
+	position: relative;
+	float: left;
+	clear: both;
+	width: 960px;
+	height: 60px;
+	top: 37px;
+}
+#topinfo02_page {
+	position: relative;
+	float: left;
+	width: 960px;
+	clear: both;
+	top: 31px;
+	margin-left: 0px;
+}
+.current_issue {
+	position: relative;
+	float: left;
+	width: 300px;
+}
+.one_column {
+	position: relative;
+	float: left;
+	width: 300px;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+#one_column_artisthome_1 {
+	position: relative;
+	float: left;
+	width: 217px;
+	
+}
+#one_column_artisthome_2 {
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	width: 217px;
+
+	
+}
+#one_column_artisthome_3 {
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	width: 217px;
+
+	
+}
+#one_column_artisthome_4 {
+	position: relative;
+	float: left;
+	margin-left: 30px;
+	width: 217px;
+
+	
+}
+
+
+.one_column_middle li{
+	
+	list-style:inside;
+	
+}
+
+.one_column_middle {
+	list-style-type: none;
+	position: relative;
+	float: left;
+	width: 300px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding: 0px;
+	overflow: hidden;
+}
+.two_columns {
+	position: relative;
+	float: right;
+	width: 630px;
+}
+.three_columns {
+	position: relative;
+	float: left;
+	width: 960px;
+	padding: 0px;
+}
+.h_space {
+	position: relative;
+	width: 960px;
+	height: 55px;
+	clear: both;
+}
+.h_space_line {
+	position: relative;
+	width: 960px;
+	height: 35px;
+	clear: both;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #111111;
+	margin-bottom: 22px;
+}
+.line {
+	position: relative;
+	height: 14px;
+	width: 100%;
+	background-image: url(./gifs/column_line.gif);
+	background-repeat: repeat-x;
+	margin-bottom: 16px;
+	z-index: 1;
+}
+
+.line_dotted {
+margin-top:3px;
+float:left;
+width:960px;
+height:1px;
+background-image: url(./gifs/head03_line.gif);
+}
+
+.line_dotted_onecol {
+margin-bottom:10px;
+
+float:left;
+width:100%;
+height:1px;
+background-image: url(./gifs/head03_line.gif);
+}
+
+.noline {
+	position: relative;
+	height: 14px;
+	width: 100%;
+}
+#footer {
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#contentArea {
+	position: relative;
+	width: 300px;
+	height:200px;
+	
+}
+
+/* PRINT ISSUE */
+
+.big {
+
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #111111;
+	font-size: 118px;
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;
+	letter-spacing: -8px;
+	padding-right: 20px;
+
+}
+.printissue_icon {
+	float: left;
+	margin-top: 25px;
+	margin-right: 10px;
+	margin-left: -5px;
+}
+
+#join {
+	position: relative;
+	float: right;
+	top: 74px;
+	width: 70px;
+	height: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #111111;
+	margin-right: 4px;
+	text-align: center;
+	vertical-align: middle;
+}
+#join a {
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	padding-top: 2px;
+	padding-left: 1px;
+}
+#join a:hover {
+}
+#info {
+	position: relative;
+	float: right;
+	top: 74px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #111111;
+	width: 70px;
+	height: 38px;
+	text-align: center;
+	vertical-align: middle;
+}
+#info a {
+	padding-top: 2px;
+	padding-left: 1px;
+	width: 100%;
+	height: 100%;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+
+/* CURRENT ISSUE */
+
+#current_image {
+	position: relative;
+	width: 298px;
+	height:211px;
+	border: 1px solid #727272;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	overflow: hidden;
+}
+#main_download {
+	position: relative;
+	width: 100%;
+	height: 36px;
+	background-color: #111111;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+#main_download a {
+	color: #FFFFFF;
+	width: 300px;
+	height: 36px;
+	text-decoration: none;
+	display: block;
+}
+#main_download a:hover {
+	color: #111111;
+	background-color: #FFFFFF;
+	width: 298px;
+	height: 34px;
+	text-decoration: none;
+	display: block;
+	border: 1px solid #727272;
+	overflow: hidden;
+}
+
+/* PAST ISSUES */
+
+#past_issues {
+	width: 100%;
+	border-spacing: 1px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+.issue_number {
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 47px;
+	padding: 0px;
+}
+.issue_date {
+	width: 95px;
+	padding: 0px;
+}
+.issue_download {
+	width: 52px;
+	height: 20px;
+	background-color: #111111;
+	color: #FFFFFF;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0px;
+	border: 0px;
+}
+.issue_download a{
+	padding-top: 2px;
+	padding-bottom: 1px;
+	height: 20px;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+}
+.issue_download a:hover{
+	height: 20px;
+	padding-top: 2px;
+	padding-bottom: 1px;
+	color: #111111;
+	background-color:#FFFFFF;
+	display: block;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.imageholder {
+  float:left;
+  width:90px;
+  height:64px;
+  margin:3px;
+  padding:0px;
+  background-image:url(ajax-loader.gif);
+  background-repeat:no-repeat;
+  background-position:center;
+  color:#FFFFFF;
+
+}
+
+/* NEWS */
+
+.newspost {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#newspopup {
+	text-align: left;
+	width: 750px;
+	margin-left: 25px;
+
+}
+
+/* SPOTLIGHT */
+
+#spotlight_table {
+}
+
+/* ARTISTLIST */
+
+#artist_list {
+	width: 100%;
+	border-spacing: 1px;
+	border-collapse: seperate;
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: middle;
+	margin: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+
+.artistname{
+	font-size: 14px;
+	color: #999999;
+	font-weight: bold;
+	width: 180px;
+	text-transform:capitalize;
+}
+
+.artistpic{
+
+	width: 40px;
+}
+
+.artistpic img{
+border:1px solid #999999;
+}
+.artistcity{
+	width: 100px;
+	text-transform:capitalize;
+}
+
+.artistcountry{
+	width: 100px;
+}
+
+#box_artistlist {
+	text-decoration: none;
+	text-align: justify;
+}
+#box_artistlist a{
+	text-decoration: none;
+}
+#box_artistlist a:hover{
+	text-decoration: none;
+}
+
+/* ARTISTPROFILE */
+
+.big_artist {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #111111;
+	font-size: 90px;
+	font-weight: bold;
+	margin: 40px 0px 0px 0px;
+	letter-spacing: -8px;
+}
+
+/* TABS */
+/*	Tab Navigation ************************************************************/
+.com-tab {
+ 	padding-top:34px;
+	margin-bottom: 1px;
+}
+.com-tab-navi {
+}
+.com-tab-navi ul{
+	margin:0px;
+}
+.com-tab-navi li {
+	display: block;
+	float: left;
+	padding-right: 2px;
+	/*background-image: url(bg_tab_navi.gif);
+	background-position: 100% 0px;*/
+	background-color: #efefef;
+}
+.com-tab-navi li.active,
+.com-tab-navi li.tab-frst-active {
+	background-position: 100% -100px;
+}
+.com-tab-navi li.active-nxt {
+	background-position: 100% -400px;
+}
+.com-tab-navi li.tab-lst {
+	background-position: 100% -200px;
+}
+.com-tab-navi li.tab-lst-active,
+.com-tab-navi li.tab-aln {
+	background-position: 100% -300px;
+	border-right: 1px dotted #999999;
+	
+}
+.com-tab-navi li a {
+	display: block;
+	padding: 6px 8px 6px 8px;
+	color: #FFFFFF;
+	background-color: #111111;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	
+}
+.com-tab-navi li.tab-frst a,
+.com-tab-navi li.tab-frst-active a,
+.com-tab-navi li.tab-aln a {
+	padding-left: 8px;
+	border-left: 1px dotted #999999;
+	/*background-image: url(bg_tab_navi.gif);
+	background-position: 0px -500px;*/
+}
+.com-tab-navi li.tab-frst-active a,
+.com-tab-navi li.tab-aln a {
+	background-position: 0px -600px;
+}
+.com-tab-navi li.active a,
+.com-tab-navi li.tab-frst-active a,
+.com-tab-navi li.tab-lst-active a,
+.com-tab-navi li.tab-aln a {
+	color: #111111;
+	border-top: 1px dotted #333333;
+	background-color: #FFFFFF;
+}
+
+
+
+
+
+
+/*	Tab Inhalt ****************************************************************/
+.com-tab-cntnt {
+	/* background-image: url(bg_tab_cntnt.gif);
+	background-repeat: repeat-y; */
+	margin-top: 20px;
+	border-top: 1px dotted #333333;
+	margin-top: 0px;
+	clear: both;
+}
+table.profiledata {
+	margin-top: 20px;
+}
+.com-whitebox {
+	margin-top: 20px;
+}
+.nomessage {
+	margin-top: 20px;
+}
+.com-tab-cntnt-2 {
+	 /*background-image: url(bg_tab_top.gif);
+	background-position: 0% 0%; */
+}
+.com-tab-cntnt-3 {
+	/*background-image: url(bg_tab_bttm.gif);
+	background-position: 0% 100%;*/
+}
+
+/*	Neu ***********************************************************************/
+
+
+#contactform textarea{
+
+	border: 1px solid #999999;
+	background-color: #f9f7f7;
+	padding: 5px;
+	}
+	
+#contactform input{
+
+	border: 1px solid #999999;
+	background-color: #f9f7f7;
+	padding: 2px;
+	}
+	
+
+#joinform input{
+
+	border: 1px solid #999999;
+	background-color: #f9f7f7;
+	padding: 2px;
+	}
+
+div#rex-form fieldset {
+}
+
+div#rex-form p {
+	clear: both;
+	margin-bottom: 10px;
+}
+div#rex-form p.formcheckbox, 
+div#rex-form p.formmcheckbox {
+	float: left;
+	width: 100%;
+}
+div.com-usersearch p.ftxt, 
+div.com-usersearch p.fslct {
+	float: left;
+}
+
+div#rex-form p.formselect, 
+div#rex-form p.formtextarea, 
+div#rex-form p.formcheckbox, 
+div#rex-form p.formmcheckbox {
+	margin-bottom: 10px;
+}
+div#rex-form p.formhtml, 
+div#rex-form p.formcaptcha {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+div#rex-form p.formhtml {
+	font-weight: bold;
+}
+
+
+/******************************	Label */
+div#rex-form p label {
+	display: block;
+	float: left;
+	width: 155px;
+	padding-top: 3px;
+}
+div#rex-form p.formtextarea label {
+	float: none;
+}
+div#rex-form p.formcheckbox label {
+	padding-top: 0px;
+}
+div.com-answer div#rex-form div.com-content p.formtext label {
+	width: 100px;
+}
+div#rex-form p.formtextarea label {
+	width: auto;
+}
+
+/******************************	Captcha */
+div#rex-form p.formcaptcha input {
+	margin-top:4px;
+}
+div#rex-form p.formcaptcha span {
+	display:block;
+}
+
+/******************************	Input */
+div#rex-form p.formtext input, 
+div#rex-form p.formpassword input, 
+div#rex-form p.formcaptcha input {
+	padding: 2px;
+	width: 250px;
+}
+div.com-answer div#rex-form div.com-content p.formtext input {
+	width: 200px;
+}
+div#rex-form p.formcaptcha input {
+	width: 100px;
+}
+div#rex-form p.formtext input, 
+div#rex-form p.formpassword input, 
+div#rex-form p.formcaptcha input, 
+div#rex-form p.formmediapool input {
+	border: 1px solid #999999;
+	background-color: #f9f7f7;
+}
+
+/******************************	TEXTAREA */
+div#rex-form p.formtextarea textarea {
+	padding: 3px;
+	width: 405px;
+	height: 80px;
+	border: 1px solid #999999;
+	background-color: #f9f7f7;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+div.com-answer div#rex-form div.com-content p.formtextarea textarea {
+	width: 300px;
+}
+/******************************	Select */
+div#rex-form p.formselect select {
+	width: 256px;
+}
+
+/******************************	CHECKBOX */
+/*	formmcheckbox - doppeltes M -> Userbild loeschen */
+div#rex-form p.formcheckbox input, 
+div#rex-form p.formmcheckbox input {
+	float: left;
+	margin: 5px;
+	margin-left: 130px;
+}
+div#rex-form p.formmcheckbox input {
+	margin-left: 0px;
+}
+div#rex-form p.formcheckbox label, 
+div#rex-form p.formmcheckbox label {
+	float: left;
+	margin-left: 10px;
+	width: 250px;
+}
+
+/******************************	Mediapool */
+/*	persoenliches Bild loeschen */
+div#rex-form p.formmediapool label img {
+	display: block;
+	margin-top: 10px;
+}
+/******************************	LINE */
+div#rex-form p.formline {
+	overflow: hidden;
+	height: 1px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+
+
+/******************************	SUBMIT */
+div#rex-form p.formsubmit label {
+	display: none;
+}
+div#rex-form p.bt1, 
+div#rex-form p.formsubmit input {
+	margin-left: 155px;
+}
+div#rex-form p.formsubmit input {
+	padding: 2px;
+
+}
+
+
+/******************************	USERLISTE HOMEPAGE */
+
+.com_userlist_homepage_all {
+	width:90px;
+	float:left;
+	margin: 3px;
+	padding: 0px;
+}
+
+
+
+.com_userlist_homepage_image img{
+	border:1px solid #999999;
+	margin-bottom: 2px;
+	padding: 0px;
+	width: 90px;
+	height: 63px;
+}
+
+.com_userlist_homepage_text{ 
+	height:20px;
+	text-align:left;
+	font-size: 9px;
+	overflow: hidden;
+	line-height: 10px;
+	
+}
+
+.com_userlist_homepage_text a{
+  	text-decoration:none;	
+}
+
+
+
+#com_userlist_artistpage_all {
+	width:620px;
+	float:left;
+	margin:3px;
+}
+
+#com_userlist_artistpage_image img{
+	border:1px solid #999999;
+}
+
+#com_userlist_artistpage_image {
+	width: 100px;
+	float:left;
+}
+
+#com_userlist_artistpage_name {
+	width: 100px;
+	float:left;
+}
+
+#com_userlist_artistpage_name {
+	width: 100px;
+	float:left;
+}
+
+#com_userlist_artistpage_text{
+    
+	height:20px;
+	text-align:left;
+	font-size: 9px;
+	overflow: hidden;
+	line-height: 10px;
+	float:left;
+	width: 200px;
+	
+}
+
+#com_userlist_artistpage_text a{
+    
+text-decoration: none;
+	
+}
+
+
+/* FORMS */
+
+
+/* PULLDOWN */
+
+.formpulldown {
+
+	width:250px;
+	padding: 2px;
+
+	border: 1px solid #999999;
+}
+
+select{
+
+	width:250px;
+	padding: 2px;
+
+	border: 1px solid #999999;
+}
+	
+	
+/* NEWSLETTER */
+
+.newsletterfield {
+	font-weight: normal;	
+	width:180px; 
+	background-color: #f9f7f7;
+	border: 1px solid #999999; 
+	padding: 2px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	text-transform: capitalize;
+
+}
+
+.newsletteremail {
+
+
+	font-weight: normal;	
+	width:180px; 
+	background-color: #f9f7f7;
+	border: 1px solid #999999; 
+	padding: 2px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	
+
+}
+
+
+.formbutton_login{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #d6d3b7;
+	border-bottom: 1px solid #75736e;
+	border-right: 1px solid #75736e;
+	color: #111111;;
+	height: 20px;
+	padding: 2px;
+	text-decoration:none;
+
+}
+
+.formbutton{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #d4d0c8;
+	border-bottom: 1px solid #75736e;
+	border-right: 1px solid #75736e;
+	color: #111111;;
+	height: 22px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-decoration:none;
+
+}
+
+
+
+.formbutton_all {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #d6d3b7;
+	border-bottom: 1px solid #75736e;
+	border-right: 1px solid #75736e;
+	color: #111111;;
+	height: 22px;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 4px;
+	text-decoration:none;
+
+}
+
+
+.formbutton2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #d6d3b7;
+	border: 1px solid #999999;
+	margin-top:5px;
+	color: #999999;
+	height: 22px;
+	
+
+}
+
+
+.formfield {
+	font-weight: normal;	
+	width:80px; 
+	background-color: #f9f7f7;
+	border: 1px solid #999999; 
+	padding: 2px; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+
+
+}
+
+.linkbutton {
+
+	text-decoration:none;
+	font-size: 9px;
+	text-align:center;
+	padding: 3px;
+
+	float:left;
+	width: 84px;
+    margin-top: 15px;
+	margin-right:2px;
+	height:10px;
+	border: 1px solid #cccccc;
+	
+}
+
+
+.filebutton {
+
+	text-decoration:none;
+	font-size: 9px;
+	text-align:center;
+	padding: 3px;
+
+	float:left;
+	width: 84px;
+    margin-top: 5px;
+	margin-right:2px;
+	height:10px;
+	border: 1px solid #cccccc;
+	
+}
+
+.formminibutton {
+	text-decoration:none;
+	font-size: 9px;
+	text-align:center;
+	padding-top: 2px;
+	float:left;
+	width:15px;
+	height:15px;
+	border: 1px solid #cccccc;
+	margin-right:1px;
+}
+
+.formminibutton a{
+	text-decoration:none;
+	
+}
+
+#justRequested {
+
+	margin-bottom: 10px;
+	}
+
+
+/* GUESTBOOK */
+
+.guestbook_entry {
+	width:620px;
+	float:left;
+	margin-bottom:10px;
+	border-bottom: 1px dotted #999999;
+	padding-bottom: 5px;
+}
+
+.guestbook_image {
+	width:100px;
+	float:left;
+	
+}
+
+.guestbook_image img{
+	border: 1px solid #999999;
+	
+	
+}
+
+.guestbook_text {
+	width:500px;
+	float:left;
+	
+}
+
+/* USERLIST HOMEPAGE */
+
+.flLeft {
+border: 1px solid #999999;
+filter: alpha(opacity=90); /* IE */
+-moz-opacity: 0.9; /* Mozilla */
+padding: 0px;
+}
+
+.flLeftProfile {
+border: 1px solid #999999;
+filter: alpha(opacity=30); /* IE */
+-moz-opacity: 0.3; /* Mozilla */
+padding: 0px;
+}
+
+.flLeft:hover{
+border: 1px solid #999999;
+filter: alpha(opacity=70);
+-moz-opacity: 7.0;
+padding: 0px;
+} 
+
+
+/* LISTINGS -> Messages / Contacts */
+
+.listboxall_unread {
+
+	width:620px;
+	float:left;
+	background-color: #FFFFFF;
+	padding-top:5px;
+	margin-bottom:15px;
+	border-bottom:1px dotted #999999;
+	padding-bottom:5px;
+	
+}
+
+.listboxall_read {
+
+	width:620px;
+	float:left;
+	background-color: #FFFFFF;
+	padding-top:5px;
+	margin-bottom:15px;
+	border-bottom:1px dotted #999999;
+	padding-bottom:20px;
+	padding-top:20px;
+
+	
+}
+
+
+.listboxall {
+
+	width:620px;
+	float:left;
+	background-color: #FFFFFF;
+	padding-top:5px;
+	margin-bottom:15px;
+	border-bottom:1px dotted #999999;
+	padding-bottom:20px;
+	padding-top:20px;
+	
+}
+
+
+
+.listboximage {
+
+	width:100px;
+	float:left;
+}
+
+.listboxcontent {
+
+	width:500px;
+	float:left;
+}
+
+.listboxnavi {
+	width:500px;
+	float:left;
+	text-align:right;
+
+}
+
+.label_contact { 
+font-weight: bold;
+width: 80px;
+height: 10px;
+
+}
+
+.row_interview { 
+
+padding-bottom:20px;
+
+}
+
+/* IssueMatrix */
+
+ .matrix_rowname {
+
+ height:35px;
+ float:left;
+ width:250px;
+ border-top:1px solid #999999;
+ line-height:34px;
+ font-size: 14px;
+ color: #999999;
+ font-weight: bold;
+  text-transform:capitalize;
+
+ 
+}
+
+ .matrix_rowname a{
+
+display:block;
+text-decoration:none;
+color: #999999;
+ 
+}
+
+.matrix_rowname a:hover{
+
+display:block;
+text-decoration:none;
+color: #111111;
+ 
+}
+
+
+.matrix_boxname {
+float:left;
+width:250px;
+border-bottom:1px solid #999999;
+}
+
+.matrix_boxissues {
+float:left; 
+border-left:1px solid #999999;
+border-bottom:1px solid #999999;
+
+}
+
+.matrix_inissue {
+
+width:20px;
+height:36px;
+background-color: #111111;
+float:left;
+}
+
+.matrix_notinissue {
+width:19px;
+height:35px;
+background-color: #FFFFFF;
+float:left;
+border-top:1px solid #999999;
+border-right:1px solid #999999;
+
+
+}
+
+.matrix_issuefield {
+float:left;
+width:20px;
+overflow:hidden;
+
+}
+
+/* Tooltips for links (title) */
+
+
+.toolTip {
+
+        padding-right: 20px;
+
+       
+
+        color: #3366FF;
+
+        
+
+        position: relative;
+		
+		z-index: 10;
+		
+
+}
+
+.toolTipWrapper {
+
+      
+        
+        position: absolute;
+		width: 100%;
+
+         margin-left:  -43px;
+		 margin-top:-23px;
+		text-transform:none;
+        text-align:right;
+        display: none;
+
+        color: #111111;
+		
+		
+
+     
+
+        font-size: 9px;
+		z-index: 10;
+
+}
+
+.toolTipTop {
+
+       
+
+     
+
+}
+
+.toolTipMid {
+
+        padding: 8px 15px;
+
+   
+
+}
+
+.toolTipBtm {
+
+      
+     
+
+}
+
+.artisthome_useronline_box {
+
+width:217px;
+height:30px;
+float:left;
+margin-bottom:5px;
+border-bottom:1px dotted #999999;
+
+}
+
+
+.artisthome_useronline_text {
+
+line-height:2;
+float:left;
+
+}
+
+.artisthome_useronline_text a{
+
+display:block;
+text-decoration: none;
+margin-left:4px;
+
+}
+
+.artisthome_useronline_image {
+
+float:left;
+
+
+}
+
+.artisthome_useronline_image img{
+
+border: 1px solid #999999;
+
+
+}
+
+
+.artisthome_headlines {
+
+width:217px;
+height:20px;
+float:left;
+margin-bottom:5px;
+margin-top:15px;
+border-bottom:1px dotted #999999;
+}
+
+.artisthome_message_all{
+
+width:217px;
+
+float:left;
+margin-bottom:15px;
+margin-top:5px;
+padding-bottom:10px;
+border-bottom:1px dotted #999999;
+}
+.artisthome_message{
+
+width:217px;
+height:20px;
+float:left;
+
+}
+
+artisthome_fillresume {
+width:217px;
+height:30px;
+float:left;
+margin-bottom:30px;
+
+
+}
+
+
+
+.toggle {
+
+text-align:right;
+float:left;
+width:10%;
+
+}
+
+
+.toggle a{
+
+text-decoration:none;
+
+}
+
+.toggle_read{
+
+text-align:right;
+float:left;
+width:10%;
+
+}
+
+.toggle_unread{
+
+text-align:right;
+float:left;
+width:20%;
+
+
+}
+
+
+.toggle_image{
+
+float:left;
+width:40px;
+
+}
+
+.toggle_image img{
+
+border: 1px solid #999999;
+}
+
+.system_message {
+
+color: #cccccc;
+
+}
+
+
+#livemessage_bg {
+ 	position: absolute;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+	background-color:#FFFFFF;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+#livemessage_box {
+	
+	width:450px;
+	height:250px;
+	padding:20px;
+	border: 1px solid#999999;
+	background-color:#FFFFFF;
+	z-index:10002;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -225px; 
+	margin-top:-125px;
+	text-align: left;
+}
